@@ -39,8 +39,20 @@
           <!-- Выбор фильтров -->
       <div class='select-model'>
         <form action='/echo' method='post'>
-           <!-- Ползунок -->
-          <div></div>
+           <!-- Фильтр по цене-->
+          <div class='range-filter'>
+            <div class='range-controls'>
+                <div class='scale'>
+                  <div class='bar'></div>
+                </div>
+                <div class='toggle min-toggle'></div>
+                <div class='toggle max-toggle'></div>
+            </div>
+            <div class='price-controls'>
+                от <input class='min-price' type='text' value='0'>
+                до <input class='max-price' type='text' value='15 000'>
+            </div>
+        </div>
            <!-- Чекбоксы и радиобаттоны -->
           <div>
             <h2 class='title-selections'>Сетка:</h2>
