@@ -6,7 +6,7 @@
   </head>
   <body>
 
-          <!-- Хедер -->
+    <!-- Хедер -->
     <header class='main-header'>
       <div class='container clearfix'>
         <div class='logo'>
@@ -34,12 +34,14 @@
         <h1>Добро пожаловать в магазин готовых макетов</h1>
       </div>
     </header>
-          <!-- Основное содержание -->
+
+    <!-- Основное содержание -->
     <div class='container clearfix'>
-          <!-- Выбор фильтров -->
-      <div class='select-model'>
+
+      <!-- Выбор фильтров -->
+      <div class='catalog-filter'>
         <form action='/echo' method='post'>
-           <!-- Фильтр по цене-->
+          <!-- Фильтр по цене-->
           <div class='range-filter'>
             <div class='range-controls'>
                 <div class='scale'>
@@ -49,32 +51,33 @@
                 <div class='toggle max-toggle'></div>
             </div>
             <div class='price-controls'>
-                от <input class='min-price' type='text' value='0'>
-                до <input class='max-price' type='text' value='15 000'>
+              от <input class='min-price' type='text' value='0'>
+              до <input class='max-price' type='text' value='15 000'>
             </div>
-        </div>
-           <!-- Чекбоксы и радиобаттоны -->
-          <div>
-            <h2 class='title-selections'>Сетка:</h2>
-            <label><input type='radio' name='layout' value='adaptive' checked>Адаптивная</label><br>
-            <label><input type='radio' name='layout' value='fixed'>Фиксированная</label><br>
-            <label><input type='radio' name='layout' value='flexible'>Резиновая</label><br>
-            <h2 class='title-selections'>Особенности:</h2>
-            <label><input type='checkbox' name='slide' checked>Слайдер</label><br>
-            <label><input type='checkbox' name='block-features'>Блок преимуществ</label><br>
-            <label><input type='checkbox' name='news' checked>Новости</label><br>
-            <label><input type='checkbox' name='gallery'>Галерея</label><br>
-            <label><input type='checkbox' name='basket-features'>Корзина</label><br>
           </div>
+
+          <!-- Чекбоксы и радиобаттоны -->
+          <h2 class='title-selections'>Сетка:</h2>
+
+          <label><input type='radio' name='layout' value='adaptive' checked>Адаптивная</label>
+          <label><input type='radio' name='layout' value='fixed'>Фиксированная</label>
+          <label><input type='radio' name='layout' value='flexible'>Резиновая</label>
+          <h2 class='title-selections'>Особенности:</h2>
+          <label><input type='checkbox' name='slide' checked>Слайдер</label>
+          <label><input type='checkbox' name='block-features'>Блок преимуществ</label>
+          <label><input type='checkbox' name='news' checked>Новости</label>
+          <label><input type='checkbox' name='gallery'>Галерея</label>
+          <label><input type='checkbox' name='basket-features'>Корзина</label>
+
           <input class='btn' type='submit' value='Показать'>
+          <!-- button -->
         </form>
       </div>
-           <!-- Макеты  -->
-      <div class='selected-models clearfix'>
-        <ul class='filters-models'>
-          <li>
-            Сортировать:
-          </li>
+
+      <!-- Макеты  -->
+      <div class='catalog'>
+        <ul class='filters'>
+          <li>Сортировать:</li>
           <li>
             <a href='#'>По цене</a>
           </li>
@@ -85,99 +88,105 @@
             <a href='#'>По функционалу</a>
           </li>
           <li>
-            <a href='#'></a>
+            <a href='#'>вверх</a>
           </li>
           <li>
-            <a href='#'></a>
+            <a href='#'>вниз</a>
           </li>
         </ul>
 
-        <div class='item'>
-          <div class='item-show'>
+        <div class="catalog-items">
+
+          <!-- правльный каталог -->
+          <div class='catalog-item'>
             <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
+            <div class='catalog-item-hidden'>
+              <h2 class='catalog-item-title'>Aviator</h2>
+              <p class='catalog-item-about'>Интернет-магазин с личным кабинетом</p>
+              <a class='btn btn-red'>12 000 р.</a>
+            </div>
           </div>
-          <div class='item-action'>
-            <h3 class='item-title'>Aviator</h3>
-            <p class='about-item'>Интернет-магазин с личным кабинетом</p>
-            <a class='btn'>12 000 р.</a>
+
+          <!-- переделать по образу и подобию -->
+          <div class='item'>
+            <div class='item-show'>
+              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
+            </div>
+            <div class='item-action'>
+              <h3 class='item-title'>Beach</h3>
+              <p class='about-item'>Сайт-визитка</p>
+              <a class='btn'>9 000 р.</a>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='item-show'>
+              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
+            </div>
+            <div class='item-action'>
+              <h3 class='item-title'>Forte</h3>
+              <p class='about-item'>Интернет-магазин с личным кабинетом</p>
+              <a class='btn'>14 000 р.</a>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='item-show'>
+              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
+            </div>
+            <div class='item-action'>
+              <h3 class='item-title'>Marquee</h3>
+              <p class='about-item'>Личный блог</p>
+              <a class='btn'>10 000 р.</a>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='item-show'>
+              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
+            </div>
+            <div class='item-action'>
+              <h3 class='item-title'>Avenue</h3>
+              <p class='about-item'>Интернет-магазин с личным кабинетом</p>
+              <a class='btn'>11 000 р.</a>
+            </div>
+          </div>
+
+          <div class='item'>
+            <div class='item-show'>
+              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
+            </div>
+            <div class='item-action'>
+              <h3 class='item-title'>Dovetail</h3>
+              <p class='about-item'>Личный блог</p>
+              <a class='btn'>7 000 р.</a>
+            </div>
+          </div>
+
+          <!-- как в барбершопе переделать -->
+          <div class='pages'>
+            <a class='btn' href='#'>1</a>
+            <a class='btn' href='#'>2</a>
+            <a class='btn' href='#'>3</a>
+            <a class='btn' href='#'>Следующая</a>
           </div>
 
         </div>
-        <div class='item'>
-          <div class='item-show'>
-            <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-          </div>
-          <div class='item-action'>
-            <h3 class='item-title'>Beach</h3>
-            <p class='about-item'>Сайт-визитка</p>
-            <a class='btn'>9 000 р.</a>
-          </div>
-        </div>
-
-        <div class='item'>
-          <div class='item-show'>
-            <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-          </div>
-          <div class='item-action'>
-            <h3 class='item-title'>Forte</h3>
-            <p class='about-item'>Интернет-магазин с личным кабинетом</p>
-            <a class='btn'>14 000 р.</a>
-          </div>
-        </div>
-
-        <div class='item'>
-          <div class='item-show'>
-            <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-          </div>
-          <div class='item-action'>
-            <h3 class='item-title'>Marquee</h3>
-            <p class='about-item'>Личный блог</p>
-            <a class='btn'>10 000 р.</a>
-          </div>
-        </div>
-
-        <div class='item'>
-          <div class='item-show'>
-            <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-          </div>
-          <div class='item-action'>
-            <h3 class='item-title'>Avenue</h3>
-            <p class='about-item'>Интернет-магазин с личным кабинетом</p>
-            <a class='btn'>11 000 р.</a>
-          </div>
-        </div>
-
-        <div class='item'>
-          <div class='item-show'>
-            <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-          </div>
-          <div class='item-action'>
-            <h3 class='item-title'>Dovetail</h3>
-            <p class='about-item'>Личный блог</p>
-            <a class='btn'>7 000 р.</a>
-          </div>
-        </div>
-
-        <div class='pages'>
-          <a class='btn' href='#'>1</a>
-          <a class='btn' href='#'>2</a>
-          <a class='btn' href='#'>3</a>
-          <a class='btn' href='#'>Следующая</a>
-        </div>
-
       </div>
     </div>
-    <div class='map'></div>
-    <div class='about-us'>
-      <p class='address'>
-        <strong>Nёrds design studio</strong><br>
-        191186, Санкт-Петербург<br>
-        ул. Б. Конюшеннная, д. 19/8<br>
-        <span>тел. +7 (812) 275-75-75</span></p><br>
-      <a class='btn'>Напишите нам</a>
-    </div>
-          <!-- Футер -->
+
+    <!-- footer -->
     <footer class='main-footer'>
+      <div class='map-container'>
+        <div class="map"></div>
+        <div class='about-us'>
+          <p><strong>Nёrds design studio</strong></p>
+          <p>191186, Санкт-Петербург</p>
+          <p>ул. Б. Конюшеннная, д. 19/8</p>
+          <a class='btn btn-red'>Напишите нам</a>
+        </div>
+      </div>
+
 
       <div class='container clearfix'>
         <div class='footer-social'>
@@ -186,7 +195,8 @@
           <a href='#' class='social-btn social-btn-inst'>Инстаграм</a>
         </div>
         <div class='discount'>
-          <p><span>Давайте дружить, это выгодно!</span><br>Скидка 10% для друзей из социальных сетей.</p>
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
