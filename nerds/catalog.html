@@ -1,200 +1,193 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title>Дизайн-студия «Nerd's»</title>
   </head>
   <body>
 
     <!-- Хедер -->
-    <header class='main-header'>
-      <div class='container clearfix'>
-        <div class='logo'>
-          <img src='http://placehold.it/140x60' width='140' height='60' alt='Nerds'>
+    <header class="main-header">
+      <div class="container clearfix">
+        <div class="logo">
+          <img src="http://placehold.it/140x60" width="140" height="60" alt="Nerds">
         </div>
-        <nav class='main-navigation'>
+        <nav class="main-navigation">
           <ul>
             <li>
-              <a href='http://barbershop-borodinski.ru/id70815/nerds/index.html'>Студия</a>
+              <a href="http://barbershop-borodinski.ru/id70815/nerds/index.html">Студия</a>
             </li>
             <li>
-              <a href='#'>Клиенты</a>
+              <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href='#'>Магазин</a>
+              <a href="#">Магазин</a>
             </li>
             <li>
-              <a href='#'>Контакты</a>
+              <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class='user-block'>
-          <a href='#' class='basket'>Корзина</a>
+        <div class="user-block">
+          <a href="#" class="basket">Корзина</a>
         </div>
         <h1>Добро пожаловать в магазин готовых макетов</h1>
       </div>
     </header>
 
     <!-- Основное содержание -->
-    <div class='container clearfix'>
+    <div class="container clearfix">
 
       <!-- Выбор фильтров -->
-      <div class='catalog-filter'>
-        <form action='/echo' method='post'>
+      <div class="catalog-filter">
+        <form action="/echo" method="post">
           <!-- Фильтр по цене-->
-          <div class='range-filter'>
-            <div class='range-controls'>
-                <div class='scale'>
-                  <div class='bar'></div>
+          <div class="range-filter">
+            <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
-                <div class='toggle min-toggle'></div>
-                <div class='toggle max-toggle'></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
             </div>
-            <div class='price-controls'>
-              от <input class='min-price' type='text' value='0'>
-              до <input class='max-price' type='text' value='15 000'>
+            <div class="price-controls">
+              от <input class="min-price" type="text" value="0">
+              до <input class="max-price" type="text" value="15 000">
             </div>
           </div>
 
           <!-- Чекбоксы и радиобаттоны -->
-          <h2 class='title-selections'>Сетка:</h2>
-
-          <label><input type='radio' name='layout' value='adaptive' checked>Адаптивная</label>
-          <label><input type='radio' name='layout' value='fixed'>Фиксированная</label>
-          <label><input type='radio' name='layout' value='flexible'>Резиновая</label>
-          <h2 class='title-selections'>Особенности:</h2>
-          <label><input type='checkbox' name='slide' checked>Слайдер</label>
-          <label><input type='checkbox' name='block-features'>Блок преимуществ</label>
-          <label><input type='checkbox' name='news' checked>Новости</label>
-          <label><input type='checkbox' name='gallery'>Галерея</label>
-          <label><input type='checkbox' name='basket-features'>Корзина</label>
-
-          <input class='btn' type='submit' value='Показать'>
-          <!-- button -->
+          <h2 class="title-selections">Сетка:</h2>
+          <input type="radio" name="layout" value="adaptive" id="rb1" checked>
+          <label for="rb1">Адаптивная</label>
+          <input type="radio" name="layout" value="fixed" id="rb2">
+          <label for="rb2">Фиксированная</label>
+          <input type="radio" name="layout" value="flexible" id="rb3">
+          <label for="rb3">Резиновая</label>
+          <h2 class="title-selections">Особенности:</h2>
+          <input type="checkbox" name="slide" checked>
+          <label for="ch1">Слайдер</label>
+          <input type="checkbox" name="block-features" id="ch1">
+          <label for="ch1">Блок преимуществ</label>
+          <input type="checkbox" name="news" id="ch2" checked>
+          <label for="ch2">Новости</label>
+          <input type="checkbox" name="gallery" id="ch2">
+          <label for="ch2">Галерея</label>
+          <input type="checkbox" name="basket-features" id="ch4">
+          <label for="ch4">Корзина</label>
+          <button type="submit" class="btn">Показать</button>
         </form>
       </div>
 
       <!-- Макеты  -->
-      <div class='catalog'>
-        <ul class='filters'>
+      <div class="catalog">
+        <ul class="filters">
           <li>Сортировать:</li>
           <li>
-            <a href='#'>По цене</a>
+            <a href="#">По цене</a>
           </li>
           <li>
-            <a href='#'>По типу</a>
+            <a href="#">По типу</a>
           </li>
           <li>
-            <a href='#'>По функционалу</a>
+            <a href="#">По функционалу</a>
           </li>
           <li>
-            <a href='#'>вверх</a>
+            <a href="#">вверх</a>
           </li>
           <li>
-            <a href='#'>вниз</a>
+            <a href="#">вниз</a>
           </li>
         </ul>
 
         <div class="catalog-items">
 
-          <!-- правльный каталог -->
-          <div class='catalog-item'>
-            <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-            <div class='catalog-item-hidden'>
-              <h2 class='catalog-item-title'>Aviator</h2>
-              <p class='catalog-item-about'>Интернет-магазин с личным кабинетом</p>
-              <a class='btn btn-red'>12 000 р.</a>
+          <div class="catalog-item">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <div class="catalog-item-hidden">
+              <h2 class="catalog-item-title">Aviator</h2>
+              <p class="catalog-item-about">Интернет-магазин с личным кабинетом</p>
+              <a class="btn btn-red">12 000 р.</a>
             </div>
           </div>
 
-          <!-- переделать по образу и подобию -->
-          <div class='item'>
-            <div class='item-show'>
-              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-            </div>
-            <div class='item-action'>
-              <h3 class='item-title'>Beach</h3>
-              <p class='about-item'>Сайт-визитка</p>
-              <a class='btn'>9 000 р.</a>
+          <div class="catalog-item">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <div class="catalog-item-hidden">
+              <h2 class="catalog-item-title">Beach</h2>
+              <p class="catalog-item-about">Сайт-визитка</p>
+              <a class="btn btn-red">9 000 р.</a>
             </div>
           </div>
 
-          <div class='item'>
-            <div class='item-show'>
-              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-            </div>
-            <div class='item-action'>
-              <h3 class='item-title'>Forte</h3>
-              <p class='about-item'>Интернет-магазин с личным кабинетом</p>
-              <a class='btn'>14 000 р.</a>
+          <div class="catalog-item">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <div class="catalog-item-hidden">
+              <h2 class="catalog-item-title">Forte</h2>
+              <p class="catalog-item-about">Интернет-магазин с личным кабинетом</p>
+              <a class="btn btn-red">14 000 р.</a>
             </div>
           </div>
 
-          <div class='item'>
-            <div class='item-show'>
-              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-            </div>
-            <div class='item-action'>
-              <h3 class='item-title'>Marquee</h3>
-              <p class='about-item'>Личный блог</p>
-              <a class='btn'>10 000 р.</a>
+          <div class="catalog-item">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <div class="catalog-item-hidden">
+              <h2 class="catalog-item-title">Marquee</h2>
+              <p class="catalog-item-about">Личный блог</p>
+              <a class="btn btn-red">10 000 р.</a>
             </div>
           </div>
 
-          <div class='item'>
-            <div class='item-show'>
-              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-            </div>
-            <div class='item-action'>
-              <h3 class='item-title'>Avenue</h3>
-              <p class='about-item'>Интернет-магазин с личным кабинетом</p>
-              <a class='btn'>11 000 р.</a>
+          <div class="catalog-item">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <div class="catalog-item-hidden">
+              <h2 class="catalog-item-title">Avenue</h2>
+              <p class="catalog-item-about">Интернет-магазин с личным кабинетом</p>
+              <a class="btn btn-red">11 000 р.</a>
             </div>
           </div>
 
-          <div class='item'>
-            <div class='item-show'>
-              <img src='http://placehold.it/240x240' width='240' height='240' alt=''>
-            </div>
-            <div class='item-action'>
-              <h3 class='item-title'>Dovetail</h3>
-              <p class='about-item'>Личный блог</p>
-              <a class='btn'>7 000 р.</a>
+          <div class="catalog-item">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <div class="catalog-item-hidden">
+              <h2 class="catalog-item-title">Dovetail</h2>
+              <p class="catalog-item-about">Личный блог</p>
+              <a class="btn btn-red">7 000 р.</a>
             </div>
           </div>
 
           <!-- как в барбершопе переделать -->
-          <div class='pages'>
-            <a class='btn' href='#'>1</a>
-            <a class='btn' href='#'>2</a>
-            <a class='btn' href='#'>3</a>
-            <a class='btn' href='#'>Следующая</a>
-          </div>
+          <ul class="pages">
+            <li class="pages-item"><a href="#" class="btn active">1</a></li>
+            <li class="pages-item"><a href="#" class="btn">2</a></li>
+            <li class="pages-item"><a href="#" class="btn">3</a></li>
+            <li class="pages-item"><a href="#" class="btn">Следующая</a></li>
+          </ul>
 
         </div>
       </div>
     </div>
 
     <!-- footer -->
-    <footer class='main-footer'>
-      <div class='map-container'>
+    <footer class="main-footer">
+      <div class="map-container">
         <div class="map"></div>
-        <div class='about-us'>
+        <div class="about-us">
           <p><strong>Nёrds design studio</strong></p>
           <p>191186, Санкт-Петербург</p>
           <p>ул. Б. Конюшеннная, д. 19/8</p>
-          <a class='btn btn-red'>Напишите нам</a>
+          <a class="btn btn-red">Напишите нам</a>
         </div>
       </div>
 
 
-      <div class='container clearfix'>
-        <div class='footer-social'>
-          <a href='#' class='social-btn social-btn-vk'>Вконтакте</a>
-          <a href='#' class='social-btn social-btn-fb'>Фейсбук</a>
-          <a href='#' class='social-btn social-btn-inst'>Инстаграм</a>
+      <div class="container clearfix">
+        <div class="footer-social">
+          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
         </div>
-        <div class='discount'>
+        <div class="discount">
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
