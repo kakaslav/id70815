@@ -1,0 +1,165 @@
+body{
+  min-width: 900px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+
+  background-color: #fff;
+  color: #283136;
+}
+h1{
+  font-size: 36px;
+  line-height: 36px;
+  color: #000;
+}
+h2{
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {outline: 1px solid red;
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header {outline: 1px solid red;
+  background-color: #eee;
+
+  margin-bottom: 80px;
+}
+.logo{outline: 1px solid red;
+  float: left;
+}
+.main-navigation{outline: 1px solid red;
+  float: right;
+}
+.main-navigation ul{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.main-navigation ul li{
+  display: inline;
+}
+.slider{outline: 1px solid red;
+  min-height: 300px;
+}
+.slider-first{
+  width: 380px;
+}
+.slider-second,
+.slider-third{
+  display: none;
+}
+.features{outline: 1px solid red;
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 80px;
+}
+.features-item{outline: 1px solid red;
+  float: left;
+
+  width: 240px;
+  margin-right: 80px;
+}
+.features-item:last-child{
+  margin-right: 0px;
+}
+.about-us{
+  padding-top: 70px;
+  padding-bottom: 75px;
+  border-bottom: 2px solid #f4f4f4;
+}
+.about-us-left{outline: 1px solid red;
+  float: left;
+
+  width: 620px;
+}
+.about-us-right{outline: 1px solid red;
+  float: right;
+
+  width: 240px;
+}
+.our-works{outline: 1px solid red;
+  padding: 35px 10px;
+  border-bottom: 2px solid #f4f4f4;
+
+  font-size: 0px;
+}
+.our-works a{outline: 1px solid red;
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 16px;
+
+  margin-right: 127px;
+}
+.our-works a:last-child{
+  margin-right: 0;
+}
+.map-container{outline: 1px solid red;
+ margin-top: 85px;
+}
+.map{outline: 1px solid red;
+  height: 415px;
+}
+.address{outline: 1px solid red;
+  width: 200px;
+  padding: 25px 20px;
+
+  background-color: #fff;
+}
+.footer-social{outline: 1px solid red;
+  float: left;
+}
+.discount{outline: 1px solid red;
+  float: right;
+}
+  /*Магазин*/
+.catalog-title{
+  font-size: 40px;
+  text-transform: uppercase;
+  clear: both;
+}
+.catalog-filter{
+  float: left;
+
+  width: 240px;
+}
+.catalog{
+  float: right;
+
+  width: 560px;
+}
+.filters{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+} 
+.filters li{
+  display: inline;
+}
+.catalog-items{
+  font-size: 0px;
+}
+.catalog-item{
+  display: inline-block;
+
+  padding-right: 80px;
+  padding-bottom: 80px;
+}
+.catalog-item:nth-child(2n){
+  padding-right: 0px;
+}
+.catalog-item-hidden{
+  display: none;
+}

@@ -2,36 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
     <title>Дизайн-студия «Nerd's»</title>
   </head>
   <body>
 
     <!-- Хедер -->
     <header class="main-header">
-      <div class="container clearfix">
-        <div class="logo">
-          <img src="http://placehold.it/140x60" width="140" height="60" alt="Nerds">
+      <div class="container">
+        <div class="header-top clearfix">
+          <div class="logo">
+            <img src="img/logo.png" width="139" height="56" alt="Nerds">
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="index.html">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+              <li class="basket">
+                <a href="#"><i></i>Корзина</a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="catalog-title">Добро пожаловать в магазин готовых макетов</h1>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="http://barbershop-borodinski.ru/id70815/nerds/index.html">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a href="#" class="basket">Корзина</a>
-        </div>
-        <h1>Добро пожаловать в магазин готовых макетов</h1>
       </div>
     </header>
 
@@ -42,6 +46,7 @@
       <div class="catalog-filter">
         <form action="/echo" method="post">
           <!-- Фильтр по цене-->
+          <h2>Стоимость:</h2>
           <div class="range-filter">
             <div class="range-controls">
                 <div class="scale">
@@ -59,22 +64,22 @@
           <!-- Чекбоксы и радиобаттоны -->
           <h2 class="title-selections">Сетка:</h2>
           <input type="radio" name="layout" value="adaptive" id="rb1" checked>
-          <label for="rb1">Адаптивная</label>
+          <label for="rb1"><i></i>Адаптивная</label>
           <input type="radio" name="layout" value="fixed" id="rb2">
-          <label for="rb2">Фиксированная</label>
+          <label for="rb2"><i></i>Фиксированная</label>
           <input type="radio" name="layout" value="flexible" id="rb3">
-          <label for="rb3">Резиновая</label>
+          <label for="rb3"><i></i>Резиновая</label>
           <h2 class="title-selections">Особенности:</h2>
           <input type="checkbox" name="slide" checked>
-          <label for="ch1">Слайдер</label>
+          <label for="ch1"><i></i>Слайдер</label>
           <input type="checkbox" name="block-features" id="ch1">
-          <label for="ch1">Блок преимуществ</label>
+          <label for="ch1"><i></i>Блок преимуществ</label>
           <input type="checkbox" name="news" id="ch2" checked>
-          <label for="ch2">Новости</label>
+          <label for="ch2"><i></i>Новости</label>
           <input type="checkbox" name="gallery" id="ch2">
-          <label for="ch2">Галерея</label>
+          <label for="ch2"><i></i>Галерея</label>
           <input type="checkbox" name="basket-features" id="ch4">
-          <label for="ch4">Корзина</label>
+          <label for="ch4"><i></i>Корзина</label>
           <button type="submit" class="btn">Показать</button>
         </form>
       </div>
@@ -93,17 +98,17 @@
             <a href="#">По функционалу</a>
           </li>
           <li>
-            <a href="#">вверх</a>
+            <a href="#"><i></i>вверх</a>
           </li>
           <li>
-            <a href="#">вниз</a>
+            <a href="#"><i></i>вниз</a>
           </li>
         </ul>
 
         <div class="catalog-items">
 
           <div class="catalog-item">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <img src="img/item-1.jpg" width="240" height="240" alt="">
             <div class="catalog-item-hidden">
               <h2 class="catalog-item-title">Aviator</h2>
               <p class="catalog-item-about">Интернет-магазин с личным кабинетом</p>
@@ -112,7 +117,7 @@
           </div>
 
           <div class="catalog-item">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <img src="img/item-2.jpg" width="240" height="240" alt="">
             <div class="catalog-item-hidden">
               <h2 class="catalog-item-title">Beach</h2>
               <p class="catalog-item-about">Сайт-визитка</p>
@@ -121,7 +126,7 @@
           </div>
 
           <div class="catalog-item">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <img src="img/item-3.jpg" width="240" height="240" alt="">
             <div class="catalog-item-hidden">
               <h2 class="catalog-item-title">Forte</h2>
               <p class="catalog-item-about">Интернет-магазин с личным кабинетом</p>
@@ -130,7 +135,7 @@
           </div>
 
           <div class="catalog-item">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <img src="img/item-4.jpg" width="240" height="240" alt="">
             <div class="catalog-item-hidden">
               <h2 class="catalog-item-title">Marquee</h2>
               <p class="catalog-item-about">Личный блог</p>
@@ -139,7 +144,7 @@
           </div>
 
           <div class="catalog-item">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <img src="img/item-5.jpg" width="240" height="240" alt="">
             <div class="catalog-item-hidden">
               <h2 class="catalog-item-title">Avenue</h2>
               <p class="catalog-item-about">Интернет-магазин с личным кабинетом</p>
@@ -148,7 +153,7 @@
           </div>
 
           <div class="catalog-item">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="">
+            <img src="img/item-6.jpg" width="240" height="240" alt="">
             <div class="catalog-item-hidden">
               <h2 class="catalog-item-title">Dovetail</h2>
               <p class="catalog-item-about">Личный блог</p>
@@ -156,12 +161,11 @@
             </div>
           </div>
 
-          <!-- как в барбершопе переделать -->
           <ul class="pages">
             <li class="pages-item"><a href="#" class="btn active">1</a></li>
             <li class="pages-item"><a href="#" class="btn">2</a></li>
             <li class="pages-item"><a href="#" class="btn">3</a></li>
-            <li class="pages-item"><a href="#" class="btn">Следующая</a></li>
+            <li class="pages-item"><a href="#" class="btn btn--big">Следующая</a></li>
           </ul>
 
         </div>
@@ -183,9 +187,9 @@
 
       <div class="container clearfix">
         <div class="footer-social">
-          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+          <a href="#" class="social-btn social-btn-vk"><i></i>Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb"><i></i>Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst"><i></i>Инстаграм</a>
         </div>
         <div class="discount">
           <h2>Давайте дружить, это выгодно!</h2>
